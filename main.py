@@ -46,7 +46,7 @@ class Mumbot:
 
 		# Connect to server without checking cert
 		try:
-			sock.connect(('voip.generic.ly', 64738))
+			sock.connect((self.host, 64738))
 		except ssl.SSLError:
 			pass
 		else:
